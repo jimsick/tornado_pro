@@ -1,0 +1,35 @@
+2018-03-12 05:04:53,762 INFO RPC interface 'supervisor' initialized
+2018-03-12 05:04:53,763 INFO daemonizing the supervisord process
+2018-03-12 05:04:53,764 INFO supervisord started with pid 1888
+2018-03-12 05:04:54,767 INFO spawned: 'tornado-8001' with pid 1889
+2018-03-12 05:04:54,768 INFO spawned: 'tornado-8002' with pid 1890
+2018-03-12 05:04:55,770 INFO success: tornado-8001 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-03-12 05:04:55,771 INFO success: tornado-8002 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-03-12 05:11:55,045 INFO waiting for tornado-8002 to stop
+2018-03-12 05:11:55,055 INFO stopped: tornado-8002 (terminated by SIGTERM)
+2018-03-12 05:12:10,438 INFO spawned: 'tornado-8002' with pid 2012
+2018-03-12 05:12:11,442 INFO success: tornado-8002 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-03-12 05:13:34,921 INFO exited: tornado-8002 (terminated by SIGKILL; not expected)
+2018-03-12 05:13:35,924 INFO spawned: 'tornado-8002' with pid 2018
+2018-03-12 05:13:36,925 INFO success: tornado-8002 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2018-03-12 09:24:25,619 INFO exited: tornado-8002 (exit status 1; not expected)
+2018-03-12 09:24:25,640 INFO exited: tornado-8001 (exit status 1; not expected)
+2018-03-12 09:24:25,643 INFO spawned: 'tornado-8001' with pid 2700
+2018-03-12 09:24:25,645 INFO spawned: 'tornado-8002' with pid 2701
+2018-03-12 09:24:26,211 INFO exited: tornado-8001 (exit status 1; not expected)
+2018-03-12 09:24:26,217 INFO exited: tornado-8002 (exit status 1; not expected)
+2018-03-12 09:24:27,220 INFO spawned: 'tornado-8001' with pid 2708
+2018-03-12 09:24:27,221 INFO spawned: 'tornado-8002' with pid 2709
+2018-03-12 09:24:27,785 INFO exited: tornado-8002 (exit status 1; not expected)
+2018-03-12 09:24:27,785 INFO exited: tornado-8001 (exit status 1; not expected)
+2018-03-12 09:24:29,789 INFO spawned: 'tornado-8001' with pid 2716
+2018-03-12 09:24:29,792 INFO spawned: 'tornado-8002' with pid 2717
+2018-03-12 09:24:30,352 INFO exited: tornado-8002 (exit status 1; not expected)
+2018-03-12 09:24:30,355 INFO exited: tornado-8001 (exit status 1; not expected)
+2018-03-12 09:24:33,360 INFO spawned: 'tornado-8001' with pid 2724
+2018-03-12 09:24:33,362 INFO spawned: 'tornado-8002' with pid 2725
+2018-03-12 09:24:33,872 INFO exited: tornado-8002 (exit status 1; not expected)
+2018-03-12 09:24:33,872 INFO gave up: tornado-8002 entered FATAL state, too many start retries too quickly
+2018-03-12 09:24:33,872 INFO exited: tornado-8001 (exit status 1; not expected)
+2018-03-12 09:24:34,874 INFO gave up: tornado-8001 entered FATAL state, too many start retries too quickly
+2018-03-12 09:26:10,556 WARN received SIGTERM indicating exit request

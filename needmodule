@@ -1,0 +1,5 @@
+pbkdf2
+sqlalchemy.orm
+pymysql
+Pillow
+qiniu

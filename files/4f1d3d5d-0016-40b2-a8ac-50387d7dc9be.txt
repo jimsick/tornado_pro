@@ -1,0 +1,2 @@
+可以 先做titanic 或者 mnist练练手
+学习别人的kernel

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/blog/addcategory/" >
+{#    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">#}
+    <input type="text" name="category_name"  > 标签名称
+    <input type="submit"  value="提交">
+</form>
+
+
+</body>
+</html>

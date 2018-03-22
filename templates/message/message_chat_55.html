@@ -1,0 +1,74 @@
+{% extends '../base/main_user_base.html' %}
+
+{% block head %}
+<link href="/static/common/sweetalert/sweetalert.css" rel="stylesheet">
+<script src="/static/common/sweetalert/sweetalert.min.js"></script>
+
+{% end %}
+{% block page_heading %}
+        <!-- page heading start-->
+        <div class="page-heading">
+            <h3>
+                讨论组 <small>Subtext for header</small>
+            </h3>
+            <ul class="breadcrumb">
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Extra Pages</a>
+                </li>
+                <li class="active">讨论组 </li>
+                <!-- 留言列表 -->
+		<h3 style="background-color: #3b75c0;" class="system_all"></h3>
+	<!-- 留言列表结束 -->
+            </ul>
+        </div>
+        <!-- page heading end-->
+{% end %}
+{% block body_wrapper %}
+    <div class="wrapper">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-6">
+                    <div class="panel">
+                         <div id="user_name">{{current_user.name}}</div>
+                        <header class="panel-heading">
+                            <!--用户列表-->
+                        </header>
+                        <div class="panel-body" >
+                            <div id="div2">
+                                <ul class="chats cool-chat" id="msg_chat">
+                                    {% for ca in cache %}
+                                        <li class={% if current_user.name != ca['name'] %}"in"{% else %}"out"{% end %}>
+                                            <img src="/static/images/useravatars/{{ ca['useravatar']}}" alt="" class="avatar">
+                                            <div class="message">
+                                                <span class="arrow"></span>
+                                                <a class="name" href="#">{{ ca['name'] }}</a>
+                                                <span class="datetime">{{ ca['datetime'] }}</span>
+                                                <span class="body">
+                                                    {%  raw ca['content_html'] %}
+                                                </span>
+                                            </div>
+                                        </li>
+                                    {% end %}
+                                </ul>
+                            </div>
+                            <div class="chat-form ">
+                                <div class="form-group">
+                                    <input id="t_input" type="text" style="width: 100%" placeholder="Type a message here..." class="form-control">
+                                </div>
+                                <button id="msg_send" class="btn btn-primary" type="submit">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% end %}
+
+{% block end %}
+<script src="/static/js/message/message_ws.js"></script>
+{% end %}

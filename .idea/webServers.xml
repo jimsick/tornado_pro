@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="cb558dc0-d678-40a3-bfed-536c803395a5" name="tonado_pro" url="http://192.168.169.138">
+        <fileTransfer host="192.168.169.138" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="2863c9d2-1f9f-402a-9c1b-11ff2346be35" name="aliyun" url="http://47.97.219.252">
+        <fileTransfer host="47.97.219.252" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

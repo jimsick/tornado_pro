@@ -1,0 +1,6 @@
+Your Server IP:  45.76.121.221 
+Your Server Port:  10001 
+Your Password:  notaku 
+Your Local IP:  127.0.0.1 
+Your Local Port:  1080 
+Your Encryption Method:  rc4-md5 

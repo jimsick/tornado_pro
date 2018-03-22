@@ -1,0 +1,8 @@
+session
+pip install pycket
+pip install redis
+
+ubuntu登录用户名密码
+zyb 931121
+数据库登录
+root 123456
